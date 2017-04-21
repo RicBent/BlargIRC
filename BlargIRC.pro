@@ -26,9 +26,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    ircsocket.cpp
+    ircuser.cpp \
+    ircconnection.cpp \
+    irccommandhandler.cpp \
+    ircchannel.cpp \
+    ircbuffer.cpp \
+    settings.cpp
 
 HEADERS  += mainwindow.h \
-    ircsocket.h
+    ircuser.h \
+    ircconnection.h \
+    irccommandhandler.h \
+    ircchannel.h \
+    ircbuffer.h \
+    settings.h
 
 FORMS    += mainwindow.ui
+
+CONFIG  += c++11
